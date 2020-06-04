@@ -29,6 +29,7 @@ ENV MVN_VERSION 3.6.3
 ENV GRAAL_VERSION 20.1.0
 ENV M2_HOME /opt/maven
 ENV GRAALVM_HOME /opt/graalvm-ce-java11-20.1.0
+ENV JAVA_HOME ${GRAALVM_HOME}
 ENV PATH ${GRAALVM_HOME}/bin:${M2_HOME}/bin:${PATH}
 
 RUN wget -nv https://apache.mirrors.nublue.co.uk/maven/maven-3/${MVN_VERSION}/binaries/apache-maven-${MVN_VERSION}-bin.tar.gz

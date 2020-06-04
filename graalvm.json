@@ -7,6 +7,7 @@
       "changes": [
         "ENV M2_HOME=/opt/maven",
         "ENV GRAALVM_HOME=/opt/graalvm-ce-java11-20.1.0",
+        "ENV JAVA_HOME=$GRAALVM_HOME",
         "ENV PATH=$GRAALVM_HOME/bin:$M2_HOME/bin:$PATH",
         "ENTRYPOINT [\"\"]",
         "CMD [\"\"]"
