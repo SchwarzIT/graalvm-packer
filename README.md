@@ -1,3 +1,5 @@
+![Docker](https://github.com/SchwarzIT/graalvm-packer/workflows/Docker/badge.svg?branch=20.1.0)
+
 # GRAALVM BY UBUNTU
 
 Two ways to build this:
