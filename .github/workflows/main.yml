@@ -13,6 +13,12 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+      
+      - name: Fix Template
+        uses: operatehappy/packer-github-actions@master
+        with:
+          command: fix
+          target: graalvm.json
 
       # validate templates
       - name: Validate Template
@@ -20,11 +26,11 @@ jobs:
         with:
           command: validate
           arguments: -syntax-only
-          target: graalvm.pkr.hcl
+          target: graalvm.json
 
       # build artifact
       - name: Build Artifact
         uses: operatehappy/packer-github-actions@master
         with:
           command: build
-          target: graalvm.pkr.hcl
+          target: graalvm.json
