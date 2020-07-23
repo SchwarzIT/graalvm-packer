@@ -7,7 +7,7 @@ Two ways to build this:
 ```
 packer build graalvm.json
 ```
-### new shool HCL
+### new school HCL
 ```
 packer build .
 ```

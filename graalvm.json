@@ -24,7 +24,7 @@
     [
       {
         "type": "docker-tag",
-        "repository": "graalvm_old",
+        "repository": "graalvm",
         "tag": "20.1.0"
       }
     ]
